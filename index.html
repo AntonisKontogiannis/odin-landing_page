@@ -43,7 +43,7 @@
 		}
 		.first_container_text{
 			height: 300px;
-			width: 500px;
+			width: 400px;
 			color: white;
 			text-align: left;
 			margin-top: 100px;
@@ -58,7 +58,7 @@
 			margin: 0;
 		}
 		.first_container_text_button {
-			background-color: #3882f6; /* Green */
+			background-color: #3882f6;
 			border: none;
 			color: white;
 			padding: 15px 32px;
@@ -71,7 +71,7 @@
 			margin-top: 20px;
 		}
 		.first_container_image{
-			height: 300px;
+			height: 200px;
 			width: 500px;
 			background-color: grey;
 			text-align: center;
@@ -79,25 +79,109 @@
 			margin-right: 20%;
 		}
 		.first_container_image_placehoolder{
-			margin-top: 120px;
+			margin-top: 100px;
 			color: white;
 		}
 		.second_container{
 			height: 500px;
 			background-color: white;
+			text-align: center;
+			align-items: center;
+		}
+		.second_container_title{
+			font-size: 36px;
+			font-weight: bold;
+			color: #1F2937;
+			margin-top: 50px;
+		}
+		.second_container_infos{
+			align-items: center;
+		}
+		.second_container_infos_list{
+			list-style-type: none;
+			text-decoration: none;
+			display: flex;
+			margin-top: 50px;
+			justify-content: space-around;
+		}
+		.second_container_infos_list_item{
+			text-align: center;
+		}
+		.second_container_infos_list_item_box{
+			width: 150px;
+			height: 150px;
+			border-radius: 12px;
+			border-style: solid;
+			border-width: 3px;
+			border-color: #3882f6;
+		}
+		.second_container_infos_list_item_text{
+			width: 150px;
 		}
 		.third_container{
 			height: 500px;
 			background-color: #e5e7eb;
+			text-align: center;
+		}
+		.third_container_text{
+			font-size: 36px;
+			font-weight: lighter;
+			font-style: italic;
+			color: #1F2937;
+			width: 800px;
+			align-self: center;
+			margin: 0 auto 0 auto;
+		}
+		.third_container_subtext{
+			font-size: 24px;
+			color: #1F2937;
+			width: fit-content;
+			align-self: flex-end !important;
+			margin: 10px 20% 0 auto;
 		}
 		.fourth_container{
 			height: 500px;
 			background-color: white;
+			align-items: center;
+		}
+		.fourth_container_box{
+			width: 1000px;
+			height: 150px;
+			background-color: #3882f6;
+			display: flex;
+			border-radius: 8px;
+			margin: 70px auto 0 auto;
+			justify-items: center;
+			justify-content: space-around;
+		}
+		.fourth_container_box_text{
+			color: white;
+			margin-top: 20px;
+		}
+		.fourth_container_box_text_title{
+			font-weight: bolder;
+		}
+		.fourth_container_box_button{
+			width: fit-content;
+			height: fit-content;
+			border-style: solid;
+			border-width: 2px;
+			border-radius: 4px;
+			border-color: white;
+			color: white;
+			text-align: center;
+			margin-top: 60px;
+			text-decoration: none;
+			display: inline-block;
+			padding: 5px 25px;
 		}
 		.footer{
 			height: 100px;
 			background-color: #1F2937;
+			color: white;
+			text-align: center;
 		}
+		
 	</style>
 
 	<body>
@@ -122,16 +206,45 @@
 			</div>
 		</div>
 		<div class="second_container">
-
+			<div class="second_container_title">Some random information</div>
+			<div class="second_container_infos">
+				<ul class="second_container_infos_list">
+					<li class="second_container_infos_list_item">
+						<div class="second_container_infos_list_item_box"></div>
+						<p class="second_container_infos_list_item_text">this is some subtext under the illustration image</p>
+					</li>
+					<li class="second_container_infos_list_item">
+						<div class="second_container_infos_list_item_box"></div>
+						<p class="second_container_infos_list_item_text">this is some subtext under the illustration image</p>
+					</li>
+					<li class="second_container_infos_list_item">
+						<div class="second_container_infos_list_item_box"></div>
+						<p class="second_container_infos_list_item_text">this is some subtext under the illustration image</p>
+					</li>
+					<li class="second_container_infos_list_item">
+						<div class="second_container_infos_list_item_box"></div>
+						<p class="second_container_infos_list_item_text">this is some subtext under the illustration image</p>
+					</li>
+				</ul>
+			</div>
 		</div>
 		<div class="third_container">
-
+			<div class="third_container_text">This is an insparing quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</div>
+			<div class="third_container_subtext">-Thor, God of Thunder</div>
 		</div>
 		<div class="fourth_container">
-
+			<div class="fourth_container_box">
+				<div class="fourth_container_box_text">
+					<h2 class="fourth_container_box_text_title">Call to action! It's time!</h2>
+					<p class="fourth_container_box_text_subtitle">Sign Up for our product by clicking that button right over there!</p>
+				</div>
+				<a href="#" class="fourth_container_box_button">
+					Sign Up
+				</a>
+			</div>
 		</div>
 		<div class="footer">
-
+			Copyright © The Odin Project 2022
 		</div>
 	</body>
 
